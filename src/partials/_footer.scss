@@ -1,0 +1,39 @@
+footer {
+    background-color: lightgrey;
+}
+
+.contenitore-lista-footer {
+    display: flex;
+    padding: $font + 5 0;
+
+    .lista-footer {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding-left: $font * 3;
+        ul {
+            li {
+                display: inline-block;
+                font-size: $font + 1;
+                color: #3D3D3DCC;
+                margin-right: $font;
+
+
+            }
+        }
+    }
+
+    .messaggi {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    i {
+        margin-right: 8px;
+        color: $color_blue;
+    }
+    select {
+        width: $font * 15;
+    }
+}

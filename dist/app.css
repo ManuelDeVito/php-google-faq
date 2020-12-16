@@ -1,5 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  font-family: "Roboto", sans-serif;
+}
+
 .contenitore {
-  width: 1200px;
+  width: 1000px;
   margin: auto;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 70px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 30px;
+  line-height: 2;
+}
+
+.contenitore-header {
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+}
+
+.header-top {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.header-top .top {
+  display: flex;
+}
+
+.header-top .top .title {
+  width: 50%;
+  font-size: 25px;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-top .top .title img {
+  width: 80px;
+}
+
+.header-top .top .title span {
+  margin-left: 5px;
+  color: #5F6368;
+}
+
+.header-top .top .account {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-top .top .account i {
+  font-size: 20px;
+}
+
+.header-top .top .account img {
+  width: 40px;
+  margin: 0 20px;
+}
+
+.header-top .lista ul {
+  font-weight: bold;
+}
+
+.header-top .lista ul li {
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 50px;
+  padding-bottom: 6px;
+  color: #5F6368;
+}
+
+.header-top .lista ul li:last-child {
+  color: #3367D6;
+  border-bottom: 3px solid #3367D6;
+}
+
+.contenitore-testo {
+  padding: 32px;
+}
+
+footer {
+  background-color: lightgrey;
+}
+
+.contenitore-lista-footer {
+  display: flex;
+  padding: 15px 0;
+}
+
+.contenitore-lista-footer .lista-footer {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.contenitore-lista-footer .lista-footer ul li {
+  display: inline-block;
+  font-size: 11px;
+  color: #3D3D3DCC;
+  margin-right: 10px;
+}
+
+.contenitore-lista-footer .messaggi {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contenitore-lista-footer i {
+  margin-right: 8px;
+  color: #3367D6;
+}
+
+.contenitore-lista-footer select {
+  width: 150px;
 }
 

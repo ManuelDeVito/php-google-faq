@@ -35,31 +35,79 @@ $termini = [
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <link rel="stylesheet" href="dist/app.css">
         <title>Google FAQ</title>
     </head>
     <body>
-        <div class="contenitore">
-                <?php
-                    for ($i = 0; $i < count($termini); $i++) { ?>
-                        <h2><?php echo $termini[$i]['domanda']; ?></h2>
-                        <p><?php echo $termini[$i]['risposta']; ?></p>
+        <div id="wrapper">
+            <header class="contenitore-header">
+                <div class="header-top">
+                    <div class="top">
+                        <div class="title">
+                            <img src="https://cdn.ilpost.it/wp-content/uploads/2015/09/google-logo.jpg?x72029" alt="">
+                            <span><strong>Privacy e Termini</strong></span>
+                        </div>
+                        <div class="account">
+                            <i class="fas fa-th"></i>
+                            <img src="src/Lupetto Roma.PNG" alt="Lupetto">
+                        </div>
+                    </div>
+                    <div class="lista">
+                        <ul>
+                            <li>Introduzione</li>
+                            <li>Norme sulla privacy</li>
+                            <li>Termini di servizio</li>
+                            <li>Tecnologie</li>
+                            <li>Domande Frequenti</li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="contenitore">
+                    <div class="contenitore-testo">
+                    <?php
+                    for ($i = 0; $i < count($termini); $i++) {
+                    ?>
+                        <h2>
+                            <?php echo $termini[$i]['domanda']; ?>
+                        </h2>
+                        <p>
+                            <?php echo $termini[$i]['risposta']; ?>
+                        </p>
                     <?php
                     }
                     ?>
-
-
-
-
-
-
-
-
-
-
-
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="contenitore">
+                    <div class="contenitore-lista-footer">
+                        <div class="lista-footer">
+                            <ul>
+                                <li>Google</li>
+                                <li>Tutto su Google</li>
+                                <li>Privacy</li>
+                                <li>Termini</li>
+                            </ul>
+                        </div>
+                        <div class="messaggi">
+                            <i class="fas fa-comment-alt"></i>
+                            <select class="" name="">
+                                <option value="">Italiano</option>
+                                <option value="">Francese</option>
+                                <option value="">Inglese</option>
+                                <option value="">Spagnolo</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
-
     </body>
 </html>
